@@ -1,4 +1,5 @@
 # PEQUENO EXPLORADOR
+<https://img.freepik.com/vetores-gratis/bonito-astronauta-pulando-com-ilustracao-de-icone-de-vetor-de-desenhos-animados-de-maos-de-metal-ciencia-tecnologia-icone-conceito-isolado-vetor-premium-estilo-de-desenho-animado-plano_138676-4189.jpg?w=2000>
 - Aplicativo Desenvolvido para a prática da Linguagem Kotlin com o Tema NASA voltado para o público infantil com o intuito de levar um pouco sobre astronomia as crianças.
 
 ## CONTEÚDO DO APLICATIVO
