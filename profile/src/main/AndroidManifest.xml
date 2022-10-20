@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name=".ProfileMainActivity"
+            android:name=".ui.ProfileMainActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
