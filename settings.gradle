@@ -16,3 +16,4 @@ rootProject.name = "Pequeno_Explorador"
 include ':app'
 include ':Profile'
 include ':Login'
+include ':Firebase'
