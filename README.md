@@ -1,3 +1,7 @@
 # Pequeno_Explorador
-Aplicativo Desenvolvido para a prática da Linguagem Kotlin com o Tema NASA voltado para o público infantil com o intuito de levar um pouco sobre astronomia as crianças.
-Aplicativo Desenvolvido em Módulos, com arquitetura MVVM.
+- Aplicativo Desenvolvido para a prática da Linguagem Kotlin com o Tema NASA voltado para o público infantil com o intuito de levar um pouco sobre astronomia as crianças.
+
+## Aplicativo Modularizado
+- Aplicativo desenvolvido em Módulos.
+- Cada módulo é independente e tem uma finalidade clara.
+- A modularização oferece oportunidades para o compartilhamento de código e a criação de vários apps usando a mesma base.
