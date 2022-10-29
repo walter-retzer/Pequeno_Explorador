@@ -9,6 +9,7 @@
 ## CONTEÚDO DO APLICATIVO
 
 - Informações, curiosidades e imagens do Sistema Solar.
+- Imagens e informações das missões dos Rovers: Curiosity, Perseverance, Opportunity e Spirit que foram enviados para o Planeta Marte
 
 ## APLICATIVO MODULARIZADO
 
@@ -21,4 +22,9 @@
 
 - PROFILE: Onde é armazenado e exibido as informações do perfil da conta do usuário.
 - LOGIN: Onde é realizado a Autenticação de Login do usuário.
-- FIREBASE: Onde é concentrado a interface com o Firebase Authentication, Firebase...
+- FIREBASE: Onde é concentrado a interface com o Firebase Authentication para cadastro de um novo usuário.
+
+## PRINCIPAIS BIBLIOTECAS UTILIZADAS
+- Component Navigation da Biblioteca Android Jetpack;
+- Component Binding da Biblioteca Android Jetpack;
+- Firebase Authentication para Cadastro de Usuário e Autenticação de Login;
