@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.wdretzer.firebase.new_user.RegisterNewUserActivity
 import com.wdretzer.pequeno_explorador.splashscreen.SplashScreenActivity
 
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,13 +16,12 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, RegisterNewUserActivity ::class.java)
-            startActivity(intent)
-        }, 5000)
-
         val intent = Intent(this, SplashScreenActivity ::class.java)
         startActivity(intent)
 
+        Handler(Looper.getMainLooper()).postDelayed({
+            val newIntent = Intent(this, RegisterNewUserActivity ::class.java)
+            startActivity(newIntent)
+        }, 5000)
     }
 }
