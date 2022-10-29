@@ -1,209 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/simple_background"
-tools:context=".new_user.RegisterNewUserActivity">
-
-<TextView
-    android:id="@+id/texto_cabecalho_cadastro"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="55dp"
-    android:background="@android:color/transparent"
-    android:text="@string/cabecalho_login"
-    android:textAlignment="center"
-    android:textColor="#FFFFFFFF"
-    android:textSize="24sp"
-    android:textStyle="bold"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-
-<TextView
-    android:id="@+id/texto_descricao_cadastro"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="25dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginEnd="25dp"
-    android:background="@android:color/transparent"
-    android:text="@string/cadastro_descricao"
-    android:textAlignment="center"
-    android:textColor="#FFFFFFFF"
-    android:textSize="20sp"
-    android:textStyle="normal"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/texto_cabecalho_cadastro" />
+    android:layout_height="match_parent"
+    android:background="@drawable/simple_background"
+    tools:context=".new_user.RegisterNewUserActivity">
 
-<ImageView
-    android:id="@+id/border_login"
-    android:layout_width="match_parent"
-    android:layout_height="425dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="15dp"
-    android:layout_marginEnd="20dp"
-    android:src="@drawable/background_login"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/texto_descricao_cadastro" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
 
-<com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/cadastro_email"
-    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:layout_marginLeft="25dp"
-    android:layout_marginTop="25dp"
-    android:layout_marginRight="25dp"
-    android:background="#FFFFFFFF"
-    android:hint="@string/email"
-    android:imeOptions="actionNext"
-    android:textColorHint="#FF000000"
-    app:boxStrokeColor="#4A27F4"
-    app:endIconMode="clear_text"
-    app:endIconTint="#FF000000"
-    app:hintTextColor="#4A27F4"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/texto_descricao_cadastro"
-    app:startIconDrawable="@drawable/icon_email"
-    app:startIconTint="#FF000000">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/input_email_cadastro"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:inputType="textEmailAddress"
-        android:maxLength="50"
-        android:textColor="#FF000000" />
-</com.google.android.material.textfield.TextInputLayout>
-
-<com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/cadastro_nome"
-    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:layout_marginLeft="25dp"
-    android:layout_marginTop="25dp"
-    android:layout_marginRight="25dp"
-    android:backgroundTint="#FFFFFFFF"
-    android:hint="@string/nome_completo"
-    android:textColorHint="#FF000000"
-    app:boxStrokeColor="#4A27F4"
-    app:endIconMode="clear_text"
-    app:endIconTint="#FF000000"
-    app:hintTextColor="#4A27F4"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cadastro_email"
-    app:startIconDrawable="@drawable/icon_acount"
-    app:startIconTint="#FF000000">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/input_nome_cadastro"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:inputType="textPersonName"
-        android:maxLength="25"
-        android:textColor="#FF000000" />
-</com.google.android.material.textfield.TextInputLayout>
-
-<com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/cadastro_password"
-    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:layout_marginLeft="25dp"
-    android:layout_marginTop="25dp"
-    android:layout_marginRight="25dp"
-    android:backgroundTint="#FFFFFFFF"
-    android:hint="@string/senha"
-    android:textColorHint="#FF000000"
-    app:boxStrokeColor="#4A27F4"
-    app:endIconMode="password_toggle"
-    app:endIconTint="#FF000000"
-    app:hintTextColor="#4A27F4"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cadastro_nome"
-    app:startIconDrawable="@drawable/ic_cadeado"
-    app:startIconTint="#FF000000">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/input_password_cadastro"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:inputType="numberPassword"
-        android:maxLength="6"
-        android:textColor="#FF000000" />
-</com.google.android.material.textfield.TextInputLayout>
-
-<com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/cadastro_check_password"
-    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:layout_marginLeft="25dp"
-    android:layout_marginTop="25dp"
-    android:layout_marginRight="25dp"
-    android:backgroundTint="#FFFFFFFF"
-    android:hint="@string/confirma_senha"
-    android:textColorHint="#FF000000"
-    app:boxStrokeColor="#4A27F4"
-    app:endIconMode="password_toggle"
-    app:endIconTint="#FF000000"
-    app:hintTextColor="#4A27F4"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cadastro_password"
-    app:startIconDrawable="@drawable/ic_cadeado"
-    app:startIconTint="#FF000000">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/input_check_password_cadastro"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:inputType="numberPassword"
-        android:maxLength="6"
-        android:textColor="#FF000000" />
-</com.google.android.material.textfield.TextInputLayout>
-
-<androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/btn_cadastrar"
-    android:layout_width="match_parent"
-    android:layout_height="54dp"
-    android:layout_marginStart="25dp"
-    android:layout_marginTop="25dp"
-    android:layout_marginEnd="25dp"
-    android:background="@drawable/button"
-    android:imeOptions="actionNext"
-    android:text="@string/cadastrar"
-    android:textColor="#FFFFFFFF"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cadastro_check_password" />
-
-<FrameLayout
-    android:id="@+id/progress_bar_cadastro"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@android:color/transparent"
-    android:backgroundTint="@android:color/transparent"
-    android:padding="16dp"
-    android:visibility="gone"
-    android:elevation="3dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
-
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</FrameLayout>
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/register_user_graph" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
