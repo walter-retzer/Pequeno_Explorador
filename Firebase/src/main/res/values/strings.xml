@@ -1,4 +1,5 @@
 <resources>
+    <!-- FragmentRegisterNewUser -->
     <string name="cabecalho_login">Olá Seja Bem-Vindo!!</string>
     <string name="cadastro_descricao">Realize seu cadastro e começe a explorar o nosso universo!!</string>
     <string name="nome_completo">Nome Completo</string>
@@ -8,6 +9,9 @@
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- FragmentLogin -->
+    <string name="descricao_login">Entre com sua senha ou realize seu cadastro.</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
 </resources>
