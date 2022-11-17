@@ -9,7 +9,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
+import com.wdretzer.firebase.R
 import com.wdretzer.firebase.databinding.FragmentLoginBinding
 
 
@@ -17,6 +20,7 @@ class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
     private lateinit var auth: FirebaseAuth
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,7 +36,10 @@ class LoginFragment : Fragment() {
         auth = FirebaseAuth.getInstance()
         binding.btnLogin.setOnClickListener { checkLogin() }
         binding.btnCadastrar.setOnClickListener {
-
+            findNavController().navigate(R.id.action_loginFragment_to_registerNewUserFragment)
+        }
+        binding.textoResetPassword.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_forgetPasswordFragment)
         }
 
     }
