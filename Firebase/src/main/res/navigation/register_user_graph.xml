@@ -18,5 +18,13 @@
         <action
             android:id="@+id/action_loginFragment_to_registerNewUserFragment"
             app:destination="@id/registerNewUserFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.wdretzer.firebase.forget_password.ForgetPasswordFragment"
+        android:label="fragment_forget_password"
+        tools:layout="@layout/fragment_forget_password" />
 </navigation>
